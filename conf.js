@@ -116,7 +116,9 @@ jsproxy_config({
 
    */
 
- node_default: 'mysite',
+// node_default: 'mysite',
+   node_default: 'cfworker',
+  
  
 
 
