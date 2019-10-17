@@ -71,12 +71,12 @@ paginationType : 'custom',
 	      height: 100%;
 	    }
 	    .swiper-slide {
-	      text-align: center;
-	      font-size: 18px;
-	      background: #fff;
+	 /*     text-align: center; */
+	      /* font-size: 18px; */
+	      /* background: #fff; */
 	
 	      /* Center slide text vertically */
-	      display: -webkit-box;
+	     /* display: -webkit-box;
 	      display: -ms-flexbox;
 	      display: -webkit-flex;
 	      display: flex;
@@ -87,7 +87,7 @@ paginationType : 'custom',
 	      -webkit-box-align: center;
 	      -ms-flex-align: center;
 	      -webkit-align-items: center;
-	      align-items: center;
+	      align-items: center; */
 	    }
   </style>
 </head>
@@ -98,33 +98,176 @@ paginationType : 'custom',
 	<script src="https://unpkg.com/swiper/js/swiper.js"> </script>  
 	<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
 	 <!-- Swiper -->
-	  <div class="swiper-container container-fluid">
-	    <div class="swiper-wrapper">
-	      <div class="swiper-slide">Slide 1 
-		  <a   href="https://www.wikipedia.org/" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">Wikipedia
-</a>
-</div>
-	      <div class="swiper-slide">
+	  <div class="swiper-container  ">
+	    <div class="swiper-wrapper  ">
+	      <div class="swiper-slide  overflow-auto shadow p-3 mb-5 bg-white rounded container ">Slide 1 
+	 <div class="row">
+		 <div class="col-5">
+			 <p>  一、知识类 <br>
+			  <button type="button" id="exampleGo" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+			    Tooltip on bottom
+			  </button>
+			  <script>$('#exampleGo').tooltip({ boundary: 'window' });</script>
+			   维基百科-自由的百科全书：   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.wikipedia.org/" target="_blank" >Wikipedia </a><br>
+			 </span></span> <br>
+			    Coursera-致力于普及全世界最好的教育: 
 			  
-			  <form class="row" action="https://pc1l.github.io/jsproxy/-----https://www.google.com/search" style="overflow:visible"   method="GET" name="f" onsubmit="return q.value!=''" role="search">
+			     <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.coursera.org/" target="_blank" > https://www. coursera.org/ </a><br>
+			  
+			    IMDB- 互联网电影资料库: 
+			  
+			     <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.imdb.com/" target="_blank" > http://www. imdb.com/ </a><br>
+			  
+			    Stackoverflow-最牛逼的IT技术问答网站： 
+			  
+			     <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://stackoverflow.com/" target="_blank" >Stack Overflow </a><br>
+			  
+			    GitHub-Build software better 
+			   together : 
+			  
+			     <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://github.com/" target="_blank" >How people build software · GitHub </a><br>
+			  
 			 
-			  <input name="tn" type="hidden" value="google"> 
+		 </div>
+	 <div class="col">
+		 <p>  二、论坛社区类 Reddit-社交新闻站点，站在互联网热点前沿
+		 		 
+		   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.reddit.com/" target="_blank" >: the front page of the internet </a><br>
+		 		 
+		  Quora-知乎的鼻祖： 
+		 		 
+		   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.quora.com/" target="_blank" > https://www. quora.com/ </a><br>
+		 		 
+		  6park-海外华人的网络家园： 
+		 		 
+		   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.6park.com/us.shtml" target="_blank" > http://www. 6park.com/us.shtml </a><br>
+		 		 
+		  学术氛围很浓的一个社区：此处不方便放链接，不懂的自行百度
+	 </div>
+	 <div class="col">
+		 三、社交类 Facebook-脸书，超级社交网站：
+		 		 
+		   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.facebook.com/" target="_blank" >http://www.facebook.com </a><br>
+		 		 
+		  Twitter-推特，新浪老爹： 
+		 		 
+		   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.twitter.com/" target="_blank" >http://www.twitter.com </a><br>
+		 		 
+		  Instagram-逼格最高的图片社交网站： 
+		 		 
+		   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.instagram.com/" target="_blank" > http://www. instagram.com/ </a><br>
+		 		 
+		  Snapchat-阅后即焚”照片分享功能App鼻祖： 
+		 		 
+		   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://snapchat.com/" target="_blank" > http:// snapchat.com/ </a><br>
+		 		 
+		  Tumblr-汤博乐-轻博客（据说有很多小视频）： 
+		 		 
+		   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.tumblr.com/" target="_blank" > https://www. tumblr.com/ </a><br>
+		 		 
+		  Pinterest-the world's catalog of ideas创意图片分享网站： 
+		 		 
+		   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.pinterest.com/" target="_blank" > https://www. pinterest.com/ </a><br>
+		 		 
+		 
+		 
+	 </div></div>
+	 
+	 <div class="row">
+	 		 <div class="col">
+				 <p>  四、视频类 Youtube-世界上最大的视频网站： </p>
+				 		 
+				   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.youtube.com/" target="_blank" > https://www. youtube.com/ </a><br>
+				 		 
+				  Vimeo-高清视频播客网站，里面的视频都很棒： 
+				 		 
+				   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://vimeo.com/" target="_blank" > https:// vimeo.com/ </a><br>
+				 		 
+				  Vine-急速六秒视频，类似于秒拍和美拍： 
+				 		 
+				   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://vine.co/" target="_blank" >Vine </a><br>
+				 		 
+				  Hulu-正版影视作品和电视节目视频网站： 
+				 		 
+				   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.hulu.com/" target="_blank" >TV Shows and Movies </a><br>
+				 		 
+				  <p>
+				 
+			 </div>
+	 <div class="col">
+		 五、新闻媒体类 1.   Buzzfeed-媒体行业的颠覆者，史上最奇葩的内容创作者： </p>
+		 		 
+		   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.buzzfeed.com/buzz" target="_blank" >BuzzFeed </a><br>
+		 		 
+		  <p> 2.   The Huffington Post-赫芬顿邮报，全美最有名的政治博客网站： </p>
+		 		 
+		   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.huffpost.com/" target="_blank" >Huffington Post </a><br>
+		 		 
+		 <p>  3.    Business Insider-全美流量最大的商业媒体之一：</p>Business Insider 4.    The Verge-最受欢迎的科技媒体之一： 
+		 		 
+		   <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.theverge.com/" target="_blank" >The Verge </a><br>
+		 		 
+		 
+	 </div>
+	 <div class="col-5">
+		 <p> 六、资源工具类 Pexels-免费高品质图片网： </p>
+		 
+		 
+		   Canva-在线图形设计平台： 
+		 
+		    <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.canva.com/" target="_blank" >New to Canva? Sign up! </a><br>
+		 
+		   推荐的几个网站： 1.    Digg-What the Internet is talking about right now： 
+		 
+		    <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://digg.com/" target="_blank" >Digg - What the Internet is talking about right now </a><br>
+		 
+		   2.    9GAG - Go Fun Yourself： 
+		 
+		    <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://9gag.com/" target="_blank" >9GAG - Go Fun Yourself </a><br>
+		 
+		   3.    FML-Your everyday life stories： 
+		 
+		    <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.fmylife.com/" target="_blank" >FML: Your everyday life stories </a><br>
+		 
+		   4.    what if-脑洞大开： 
+		 
+		    <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://what-if.xkcd.com/" target="_blank" >Sun Bug </a><br>
+		 
+		   5.    BBC-英国最大的新闻广播机构： 
+		 
+		    <a  class="d-block rounded-pill   text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://www.bbc.co.uk/" target="_blank" >BBC - Home </a><br>
+		 
+		   6.    CNN-美国有线电视新闻网： 
+		 
+		    <a  class="d-block rounded-pill  text-primary text-center"href="https://pc1l.github.io/jsproxy/-----https://edition.cnn.com/" target="_blank" >CNN - Breaking News U.S. World Weather Entertainment &amp;amp;amp; Video News </a><br>
+		 
+		 
+	 </div></div>
+	 
+ 
+
+</div>
+			  
+	      <div class="swiper-slide  overflow-auto shadow p-3 mb-5 bg-white rounded ">
+			  <form class="row" action="https://pc1l.github.io/jsproxy/-----https://www.google.com/search" style="overflow:visible"   method="GET"  role="search">
+			 
+			  <input   type="hidden" value="google"> 
 			  <a class="col-2 > 
 			  <img  src="https://pc1l.github.io/jsproxy/-----https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"  align="bottom" border="0"></a> 
 			  <input class="col-7 form-control  form-control-lg rounded-pill border border-success text-center" type="text" name="word" size="30"/> 
-			  <input class="col-3 btn btn-success rounded-pill font-weight-bold" type="submit" value="google"/> 
+			  <input class="col btn btn-success rounded-pill font-weight-bold" type="submit" value="google"/> 
 			  </form> 
 			  
 			  
 		  </div>
-	      <div class="swiper-slide">Slide 3</div>
-	      <div class="swiper-slide">Slide 4</div>
-	      <div class="swiper-slide">Slide 5</div>
-	      <div class="swiper-slide">Slide 6</div>
-	      <div class="swiper-slide">Slide 7</div>
-	      <div class="swiper-slide">Slide 8</div>
-	      <div class="swiper-slide">Slide 9</div>
-	      <div class="swiper-slide">Slide 10</div>
+	      <div class="swiper-slide  overflow-auto shadow p-3 mb-5 bg-white rounded ">Slide 4</div>
+	      <div class="swiper-slide  overflow-auto shadow p-3 mb-5 bg-white rounded ">Slide 3</div>
+	      <div class="swiper-slide  overflow-auto shadow p-3 mb-5 bg-white rounded ">Slide 5</div>
+	      <div class="swiper-slide  overflow-auto shadow p-3 mb-5 bg-white rounded ">Slide 6</div>
+	      <div class="swiper-slide  overflow-auto shadow p-3 mb-5 bg-white rounded ">Slide 7</div>
+	      <div class="swiper-slide  overflow-auto shadow p-3 mb-5 bg-white rounded ">Slide 8</div>
+	      <div class="swiper-slide  overflow-auto shadow p-3 mb-5 bg-white rounded ">Slide 9</div>
+	      <div class="swiper-slide  overflow-auto shadow p-3 mb-5 bg-white rounded ">Slide 10</div>
 	    </div>
 	    <!-- Add Pagination -->
 	    <div class="swiper-pagination"></div>
@@ -155,7 +298,7 @@ paginationType : 'custom',
   </div>
   <div class="box row container-fluid">
     <span class="col-5   text-primary text-center font-weight-bold">切换线路:</span>
-	<select class="col-7 form-control  custom-select rounded border border-primary text-center  "  id="selNode" multiple="">
+	<select class="col-7 form-control  custom-select rounded   text-primary text-center  "  id="selNode" multiple="">
 	 
 	    </select>
 		
