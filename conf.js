@@ -116,7 +116,11 @@ jsproxy_config({
 
    */
 
-  node_default: 'mysite',
+// node_default: 'mysite',
+   node_default: 'cfworker',
+      label: 'cfworker',
+
+
 
   // node_default: /jsproxy-demo\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
 
