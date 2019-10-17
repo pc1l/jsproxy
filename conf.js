@@ -95,12 +95,12 @@ jsproxy_config({
 //         'b.jsproxy.workers.dev': 1,
  
 
-  'wispy-cloud-b5d6.lituo.workers.dev': 1,
-  'shiny-scene-627c.lituo.workers.dev': 1,
+'muddy-darkness-0610.lituo.workers.dev': 1,
+'fancy-block-fa42.lituo.workers.dev': 1,
+'delicate-dream-6aca.lituo.workers.dev': 1,
+'curly-sun-ab85.lituo.workers.dev': 1,
+'wispy-cloud-b5d6.lituo.workers.dev': 1,
 
-  'odd-forest-6319.lituo.workers.dev': 1,
-
-  'misty-pond-db03.lituo.workers.dev': 1,
 
       }
 
