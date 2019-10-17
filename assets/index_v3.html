@@ -4,7 +4,42 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+ 
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">    
+ 
+<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+<script>
+$(document).ready(function () {
+ // ...
+   var mySwiper = new Swiper ('.swiper-container', {
+    // direction: 'vertical', // 垂直切换选项
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+ autoplay:1000,
+effect : 'coverflow',
+slidesPerView: 3,
+centeredSlides: true,
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+      // paginationType : 'fraction',
+paginationType : 'progress',
+paginationType : 'custom',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.ac-button-next',
+      prevEl: '.ac-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })      
+})
+</script>
  
   <title>看得容易Page Sandbox</title>
   <meta charset="utf-8">
@@ -30,11 +65,86 @@
     #list a {
       margin: 1em;
     }
+	
+	  .swiper-container {
+	      width: 100%;
+	      height: 100%;
+	    }
+	    .swiper-slide {
+	      text-align: center;
+	      font-size: 18px;
+	      background: #fff;
+	
+	      /* Center slide text vertically */
+	      display: -webkit-box;
+	      display: -ms-flexbox;
+	      display: -webkit-flex;
+	      display: flex;
+	      -webkit-box-pack: center;
+	      -ms-flex-pack: center;
+	      -webkit-justify-content: center;
+	      justify-content: center;
+	      -webkit-box-align: center;
+	      -ms-flex-align: center;
+	      -webkit-align-items: center;
+	      align-items: center;
+	    }
   </style>
 </head>
 <body>
+	
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">  
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">    
+	<script src="https://unpkg.com/swiper/js/swiper.js"> </script>  
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+	 <!-- Swiper -->
+	  <div class="swiper-container">
+	    <div class="swiper-wrapper">
+	      <div class="swiper-slide">Slide 1</div>
+	      <div class="swiper-slide">Slide 2</div>
+	      <div class="swiper-slide">Slide 3</div>
+	      <div class="swiper-slide">Slide 4</div>
+	      <div class="swiper-slide">Slide 5</div>
+	      <div class="swiper-slide">Slide 6</div>
+	      <div class="swiper-slide">Slide 7</div>
+	      <div class="swiper-slide">Slide 8</div>
+	      <div class="swiper-slide">Slide 9</div>
+	      <div class="swiper-slide">Slide 10</div>
+	    </div>
+	    <!-- Add Pagination -->
+	    <div class="swiper-pagination"></div>
+	  </div>
+	   <!-- Initialize Swiper -->
+	    <script>
+	      var swiper = new Swiper('.swiper-container', {
+	        pagination: {
+	          el: '.swiper-pagination',
+	          dynamicBullets: true,
+	        },
+	      });
+	    </script>
   <div class="box">
 	
+	
+	<form action="http://www.baidu.com/baidu" target="_blank"> 
+	<div align="center"> 
+	<input name="tn" type="hidden" value="baidu"> 
+	<a > 
+	<img src="http://img.baidu.com/search/img/baidulogo_clarity_80_29.gif"  align="bottom" border="0"></a> 
+	<input type="text" name="word" size="30"/> 
+	<input type="submit" value="百度搜索"/></div> 
+	</form> 
+
+	<form action="
+action="https://pc1l.github.io/jsproxy/-----https://www.google.com/search" target="_blank"> 
+	<div align="center"> 
+	<input name="tn" type="hidden" value="google"> 
+	<a > 
+	<img src="https://pc1l.github.io/jsproxy/-----https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"  align="bottom" border="0"></a> 
+	<input type="text" name="word" size="30"/> 
+	<input type="submit" value="google"/></div> 
+	</form> 
+
 	  <h3 class="text-success text-center font-weight-bold">看得容易Page Sandbox <span class="badge badge-danger">高速</span></h3>
 	  <p class="text-primary text-center font-weight-bold">可以提供高速观看视频及浏览网页（本网页由颗粒稻壳建立）</p>
     <p class="text-info text-center font-weight-bold">因为网页代理的关系部分功能如注册，登陆，留言等操作无法进行</p>
