@@ -95,11 +95,11 @@ jsproxy_config({
 //         'b.jsproxy.workers.dev': 1,
  
 
-'muddy-darkness-0610.lituo.workers.dev': 1,
-'fancy-block-fa42.lituo.workers.dev': 1,
-'delicate-dream-6aca.lituo.workers.dev': 1,
-'curly-sun-ab85.lituo.workers.dev': 1,
-'wispy-cloud-b5d6.lituo.workers.dev': 1,
+'muddy-darkness-0610.lituo.workers.dev': 4,
+'fancy-block-fa42.lituo.workers.dev': 4,
+'delicate-dream-6aca.lituo.workers.dev': 4,
+'curly-sun-ab85.lituo.workers.dev': 4,
+'wispy-cloud-b5d6.lituo.workers.dev': 4,
 
 
       }
@@ -116,9 +116,8 @@ jsproxy_config({
 
    */
 
-// node_default: 'mysite',
-   node_default: 'cfworker',
-      label: 'cfworker',
+ node_default: 'mysite',
+ 
 
 
 
