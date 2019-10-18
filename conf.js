@@ -12,46 +12,53 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
-    'demo-hk': {
-      label: '演示服务-香港节点',
-      lines: {
-        // 主机:权重
-        'node-aliyun-hk-1.etherdream.com:8443': 1,
-        'node-aliyun-hk-2.etherdream.com:8443': 2,
-      }
-    },
-    'demo-sg': {
-      label: '演示服务-新加坡节点: 1,
-      lines: {
-        'node-aliyun-sg.etherdream.com:8443': 1,
-      },
-    },
-    'mysite': {
-      label: '当前站点',
-      lines: {
-        [location.host]',
-      }
-    },
+//     'demo-hk': {
+//       label: '演示服务-香港节点',
+//       lines: {
+//         // 主机:权重
+//         'node-aliyun-hk-1.etherdream.com:8443': 1,
+//         'node-aliyun-hk-2.etherdream.com:8443': 2,
+//       }
+//     },
+//     'demo-sg': {
+//       label: '演示服务-新加坡节点: 1,
+//       lines: {
+//         'node-aliyun-sg.etherdream.com:8443': 1,
+//       },
+//         'demo-sg': {
+//       label: '演示服务-新加坡节点: 1,
+//       lines: {
+// //         'node-aliyun-sg.etherdream.com:8443': 1,
+          
+//       },
+//     },
+  
+//     'mysite': {
+//       label: '当前站点',
+//       lines: {
+//         [location.host]',
+//       }
+//     },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: '',
       hidden: true,
       lines: {
         // 收费版（高权重）
-        'node-cfworker-2.etherdream.com': 4,
+//         'node-cfworker-2.etherdream.com': 4,
 
         // 免费版（低权重，分摊一些成本）
         // 每个账号每天 10 万次免费请求，但有频率限制
-        'muddy-darkness-0610.lituo.workers.dev': 4,
-'fancy-block-fa42.lituo.workers.dev': 4,
-'delicate-dream-6aca.lituo.workers.dev': 4,
-'curly-sun-ab85.lituo.workers.dev': 4,
-'wispy-cloud-b5d6.lituo.workers.dev': 4,
+        'muddy-darkness-0610.lituo.workers.dev': 600,
+'fancy-block-fa42.lituo.workers.dev':  600,
+'delicate-dream-6aca.lituo.workers.dev':  600,
+'curly-sun-ab85.lituo.workers.dev':  600,
+'wispy-cloud-b5d6.lituo.workers.dev':  600,
 
-        'b.007.workers.dev': 1,
-        'b.hehe.workers.dev': 1,
-        'b.lulu.workers.dev': 1,
-        'b.jsproxy.workers.dev': 1,
+//         'b.007.workers.dev': 1,
+//         'b.hehe.workers.dev': 1,
+//         'b.lulu.workers.dev': 1,
+//         'b.jsproxy.workers.dev': 1,
       }
     }
   },
