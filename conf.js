@@ -36,12 +36,12 @@ jsproxy_config({
     'mysite': {
       label: '当前站点',
       lines: {
-                'muddy-darkness-0610.lituo.workers.dev': 1,
-'fancy-block-fa42.lituo.workers.dev':  600,
-'delicate-dream-6aca.lituo.workers.dev':  600,
-'curly-sun-ab85.lituo.workers.dev':  600,
-'wispy-cloud-b5d6.lituo.workers.dev':  600,
-
+//                 'muddy-darkness-0610.lituo.workers.dev': 1,
+// 'fancy-block-fa42.lituo.workers.dev':  600,
+// 'delicate-dream-6aca.lituo.workers.dev':  600,
+// 'curly-sun-ab85.lituo.workers.dev':  600,
+// 'wispy-cloud-b5d6.lituo.workers.dev':  600,
+'pc1l.github.io/jsproxy':1,
 //         [location.host]':1,
       }
     },
@@ -51,20 +51,20 @@ jsproxy_config({
       hidden: true,
       lines: {
         // 收费版（高权重）
-//         'node-cfworker-2.etherdream.com': 4,
+        'node-cfworker-2.etherdream.com': 4,
 
         // 免费版（低权重，分摊一些成本）
         // 每个账号每天 10 万次免费请求，但有频率限制
-        'muddy-darkness-0610.lituo.workers.dev': 600,
-'fancy-block-fa42.lituo.workers.dev':  600,
-'delicate-dream-6aca.lituo.workers.dev':  600,
-'curly-sun-ab85.lituo.workers.dev':  600,
-'wispy-cloud-b5d6.lituo.workers.dev':  600,
+        'muddy-darkness-0610.lituo.workers.dev': 1,
+'fancy-block-fa42.lituo.workers.dev':  1,
+'delicate-dream-6aca.lituo.workers.dev':  1,
+'curly-sun-ab85.lituo.workers.dev':  1,
+'wispy-cloud-b5d6.lituo.workers.dev':  1,
 
-//         'b.007.workers.dev': 1,
-//         'b.hehe.workers.dev': 1,
-//         'b.lulu.workers.dev': 1,
-//         'b.jsproxy.workers.dev': 1,
+        'b.007.workers.dev': 1,
+        'b.hehe.workers.dev': 1,
+        'b.lulu.workers.dev': 1,
+        'b.jsproxy.workers.dev': 1,
       }
     }
   },
