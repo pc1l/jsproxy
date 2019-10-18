@@ -33,12 +33,12 @@ jsproxy_config({
 //       },
 //     },
   
-//     'mysite': {
-//       label: '当前站点',
-//       lines: {
-//         [location.host]',
-//       }
-//     },
+    'mysite': {
+      label: '当前站点',
+      lines: {
+        [location.host]':600,
+      }
+    },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: '自建',
