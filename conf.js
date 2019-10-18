@@ -36,7 +36,13 @@ jsproxy_config({
     'mysite': {
       label: '当前站点',
       lines: {
-        [location.host]':1,
+                'muddy-darkness-0610.lituo.workers.dev': 1,
+'fancy-block-fa42.lituo.workers.dev':  600,
+'delicate-dream-6aca.lituo.workers.dev':  600,
+'curly-sun-ab85.lituo.workers.dev':  600,
+'wispy-cloud-b5d6.lituo.workers.dev':  600,
+
+//         [location.host]':1,
       }
     },
     // 该节点用于加载大体积的静态资源
