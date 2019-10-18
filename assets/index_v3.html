@@ -67,8 +67,9 @@ paginationType : 'custom',
     }
 	
 	  .swiper-container {
-	      width: 100%;
-	      height: 100%;
+	      width: 100vw;
+	      /* height: 100%; */
+		  	height: 100vh;
 	    }
 	    .swiper-slide {
 			height: 100vh;
@@ -125,28 +126,28 @@ paginationType : 'custom',
 
  
   <!-- Swiper -->
-  	  <div class="swiper-container mt-4 pt-4 ">
+  	  <div class="swiper-container bg-light ">
   	    <div class="swiper-wrapper  ">
   	      <div class="swiper-slide      container ">
 			  
-			  <div class="box container-fluid">
+			  <div class="box container-fluid   pt-4">
 			  	  
 			  	  
-			  	  <h3 class="text-success text-center font-weight-bold">看得容易Page Sandbox <span class="badge badge-danger">高速</span></h3>
-			  	  <p class="text-primary text-center  ">可以提供高速观看视频及浏览网页<br>（本页由 颗粒稻壳 建立）</p>
-			    <p class="text-info text-center  ">因页代理(如注册，登陆，留言等功能无法操作)</p>
+			  	  <h3 class="text-success text-center font-weight-bold pt-1">看得容易Page Sandbox <span class="badge badge-danger">高速</span></h3>
+			  	  <p class="text-dark text-center  pt-1">可以提供高速观看视频及浏览网页<br>（本页由 颗粒稻壳 建立）</p>
+			    <p class="text-secondary text-center  pt-1 ">因页代理(如注册，登陆，留言等功能无法操作)</p>
 			  	 
-			  	<input id="txtURL"  class="form-control  form-control-lg rounded-pill border border-success text-center" type="text" placeholder=".form-control-lg" value="www.google.com" autofocus>
+			  	<input id="txtURL"  class="form-control  form-control-lg rounded-pill border border-secondary text-center" type="text" placeholder=".form-control-lg" value="www.google.com" autofocus>
 			  </div>
-			  <div class="box container-fluid">
-			    <button class="btn btn-success rounded-pill font-weight-bold" type="button" id="btnGo">Go</button>
+			  <div class="box container-fluid pt-1">
+			    <button class="btn btn-light rounded-pill font-weight-bold" type="button" id="btnGo">Go</button>
 			  </div>
 			  
-			<div class="row">
+			<div class="row pt-4">
 			  <span class="col-7 text-black-50 text-center  ">
 			  <br>
-			  <div class="box" id="list">
-			  </div></span><div class="col-5">
+			  <div class="box pt-1" id="list">
+			  </div></span><div class="col-5 p-4 m-0">
 			  切换线路:
 			  <select class="  form-control  custom-select rounded   text-primary text-center  "  id="selNode" multiple="">
 			   
@@ -157,9 +158,13 @@ paginationType : 'custom',
   
   </div>
   			  
-  	      <div class="swiper-slide  m-0 t-0  " > 
-  
-		0
+  	      <div class="swiper-slide   " > 
+  <iframe src="https://pc1l.github.io/jsproxy/-----https://www.google.com/"
+              height="100%"
+              width="100%"
+              frameborder="0"
+              scrolling="0"
+      ></iframe> 
 			</div>
   	      <div class="swiper-slide     "> Slide 4</div>
   	      <div class="swiper-slide     "> Slide 3</div>
