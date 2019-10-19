@@ -1,6 +1,13 @@
 # HTTP 返回头存在 access-control-allow-origin: * 的站点，不走代理直接连接
 # 收集了部分，实验中...
-
+#diy
+       unpkg.com
+       cdnjs.cloudflare.com
+       code.jquery.com
+       stackpath.bootstrapcdn.com
+      cdn.jsdelivr.net
+   static.bshare.cn
+   
 # google
 ssl.google-analytics.com
 
