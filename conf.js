@@ -99,8 +99,10 @@ jsproxy_config({
   /**
    * 自定义注入页面的 HTML
    */
-  inject_html: '<!-- custom html -->',
-
+//   inject_html: '<!-- custom html -->',
+  
+inject_html: '<!-- Optional JavaScript -->       <!-- jQuery first, then Popper.js, then Bootstrap JS -->       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>      <!-- Bootstrap CSS -->      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">   <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>   		<script src="https://cdn.jsdelivr.net/npm/tooltip.js@1.3.2/dist/umd/tooltip.min.js" integrity="sha256-VvF1eJMngdIOoGjesEiM88JrflLgdbJWXH7WJr8juDI=" crossorigin="anonymous"></script>   <div class="bshare-custom text-success text-center font-weight-bold"><a title="分享到i贴吧" class="bshare-itieba"></a><a title="分享到复制网址" class="bshare-clipboard"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到" class="bshare-weixin"></a><a title="分享到QQ好友" class="bshare-qqim"></a><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到雪球" class="bshare-xueqiu"></a><a title="分享到Reddit" class="bshare-reddit"></a><a title="分享到Twitter" class="bshare-twitter"></a><a title="分享到Facebook" class="bshare-facebook"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="//static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></scri
+',
   /**
    * URL 自定义处理（设计中）
    */
