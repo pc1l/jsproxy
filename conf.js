@@ -204,7 +204,7 @@ jsproxy_config({
 
   
 
-inject_html: 'https://cdn.jsdelivr.net/npm/swiper@5.1.0/css/swiper.min.css',
+inject_html: 'index_v3.html',
 inject_html: 'https://cdn.jsdelivr.net/npm/swiper@5.1.0/js/swiper.min.js',
 
   /**
