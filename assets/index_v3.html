@@ -9,131 +9,6 @@
   <base target="_blank">
   
   
-    <script>
-      const PAGE_CONF_SET = 110
-      const PAGE_CONF_GET = 111
-  
-      const SW_CONF_RETURN = 112
-      const SW_CONF_CHANGE = 113
-  
-      const PAGE_READY_CHECK = 200
-      const SW_READY = 201
-  
-      const sw = navigator.serviceWorker
-  
-  
-      sw.addEventListener('message', onSwMsg)
-      sendMsgToSw(PAGE_READY_CHECK)
-  
-      btnGo.onclick = function() {
-        const text = txtURL.value.trim()
-        if (text) {
-          const url = './-----' + text
-          open(url, '_blank', 'noopener,noreferrer')
-        }
-      }
-      txtURL.onkeypress = function(e) {
-        if (e.keyCode === 13) {
-          btnGo.onclick()
-        }
-      }
-      txtURL.setSelectionRange(0, txtURL.value.length)
-  
-  
-      function onSwMsg(e) {
-        const [cmd, msg] = e.data
-  
-        switch (cmd) {
-        case SW_CONF_RETURN:
-          conf = msg
-          showConf()
-          break
-  
-        case SW_CONF_CHANGE:
-          conf = msg
-          updateSelected()
-          break
-  
-        case SW_READY:
-          console.log('sw ready')
-          showIcons()
-          sendMsgToSw(PAGE_CONF_GET)
-          break
-        }
-      }
-  
-      function onSwFail(err) {
-        txtURL.value = err
-      }
-  
-      selNode.onchange = function() {
-        const item = this.options[this.selectedIndex]
-        const node = item.value
-        conf.node_default = node
-        sendMsgToSw(PAGE_CONF_SET, conf)
-      }
-  
-      function sendMsgToSw(cmd, val) {
-        const ctl = sw.controller
-        if (!ctl) {
-          console.log('ctl is null')
-          return
-        }
-        ctl.postMessage([cmd, val])
-      }
-  
-      const SITE_LIST = [
-        ['google', ''],
-        ['youtube', ''],
-        ['twitter', 'twitter.com/google'],
-        ['flickr', ''],
-        ['quora', 'www.quora.com/topic/JavaScript-programming-language'],
-        ['twitch', 'www.twitch.tv/'],
-        ['reddit', ''],
-        ['wiki', 'zh.wikipedia.org/'],
-        ['gist', 'gist.github.com/'],
-        ['facebook', 'facebook.com/Google/'],
-        ['blogger', ''],
-      ]
-  
-      function showIcons() {
-        list.innerHTML = SITE_LIST.map(v => {
-          let [id, url] = v
-          url = url || `www.${id}.com/`
-          return `\
-  <a rel="noopener noreferrer"  class="m-1" target="_blank" href=./-----https://${url}>\
-  <img width=28 height=28 src=__sys__/assets/ico/${id}.png></a>`
-        }).join('') 
-  	  
-      }
-  
-      function addNodeItem(id, text) {
-        const optEl = document.createElement('option')
-        optEl.id = '--' + id
-        optEl.text = text
-        optEl.value = id
-        selNode.appendChild(optEl)
-      }
-  
-      function updateSelected() {
-        const id = conf.node_default
-        const item = document.getElementById('--' + id)
-        if (item) {
-          item.selected = true
-        } else {
-          console.warn('unknown node:', id)
-        }
-      }
-  
-      function showConf() {
-        for (const [id, node] of Object.entries(conf.node_map)) {
-          if (!node.hidden) {
-            addNodeItem(id, node.label)
-          }
-        }
-        updateSelected()
-      }
-    </script>
   
  <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -144,9 +19,9 @@
   
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">    
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.1.0/css/swiper.min.css">    
   
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@5.1.0/js/swiper.min.js"> </script>
   		<script src="https://cdn.jsdelivr.net/npm/tooltip.js@1.3.2/dist/umd/tooltip.min.js" integrity="sha256-VvF1eJMngdIOoGjesEiM88JrflLgdbJWXH7WJr8juDI=" crossorigin="anonymous"></script>
  		
   <style>
@@ -427,7 +302,7 @@ bottom: -1%;right:0;
 		  <div class="box container   pt-4">
 		  	  
 		  	  
-		  	  <h5 class="text-success text-center font-weight-bold pt-1"><img src="pc1l.github.io/jsproxy/-----www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" ></img><span class="badge badge-danger">高速</span></h5>
+		  	  <h5 class="text-success text-center font-weight-bold pt-1"><img src=https://pc1l.github.io/jsproxy/-----www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" ></img><span class="badge badge-danger">高速</span></h5>
 
 		  	 <form class="tsf nj pt-2 " action="https://pc1l.github.io/jsproxy/-----https://www.google.com/search" style="overflow:visible" id="tsf" method="GET" name="f" onsubmit="return q.value!=''" role="search">
 				 <input   class="form-control   form-control-lg rounded-pill border border-secondary text-center" maxlength="2048" name="q" type="text" jsaction="paste:puy29d" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" role="combobox" spellcheck="false" title="Google 搜索" value="" aria-label="搜索" data-ved="0ahUKEwjlha_MzKTlAhVE63MBHdyiAq0Q39UDCAQ"  placeholder="谷歌" autofocus>
@@ -778,5 +653,130 @@ $(document).ready(function () {
   
 
   
+    <script>
+      const PAGE_CONF_SET = 110
+      const PAGE_CONF_GET = 111
+  
+      const SW_CONF_RETURN = 112
+      const SW_CONF_CHANGE = 113
+  
+      const PAGE_READY_CHECK = 200
+      const SW_READY = 201
+  
+      const sw = navigator.serviceWorker
+  
+  
+      sw.addEventListener('message', onSwMsg)
+      sendMsgToSw(PAGE_READY_CHECK)
+  
+      btnGo.onclick = function() {
+        const text = txtURL.value.trim()
+        if (text) {
+          const url = './-----' + text
+          open(url, '_blank', 'noopener,noreferrer')
+        }
+      }
+      txtURL.onkeypress = function(e) {
+        if (e.keyCode === 13) {
+          btnGo.onclick()
+        }
+      }
+      txtURL.setSelectionRange(0, txtURL.value.length)
+  
+  
+      function onSwMsg(e) {
+        const [cmd, msg] = e.data
+  
+        switch (cmd) {
+        case SW_CONF_RETURN:
+          conf = msg
+          showConf()
+          break
+  
+        case SW_CONF_CHANGE:
+          conf = msg
+          updateSelected()
+          break
+  
+        case SW_READY:
+          console.log('sw ready')
+          showIcons()
+          sendMsgToSw(PAGE_CONF_GET)
+          break
+        }
+      }
+  
+      function onSwFail(err) {
+        txtURL.value = err
+      }
+  
+      selNode.onchange = function() {
+        const item = this.options[this.selectedIndex]
+        const node = item.value
+        conf.node_default = node
+        sendMsgToSw(PAGE_CONF_SET, conf)
+      }
+  
+      function sendMsgToSw(cmd, val) {
+        const ctl = sw.controller
+        if (!ctl) {
+          console.log('ctl is null')
+          return
+        }
+        ctl.postMessage([cmd, val])
+      }
+  
+      const SITE_LIST = [
+        ['google', ''],
+        ['youtube', ''],
+        ['twitter', 'twitter.com/google'],
+        ['flickr', ''],
+        ['quora', 'www.quora.com/topic/JavaScript-programming-language'],
+        ['twitch', 'www.twitch.tv/'],
+        ['reddit', ''],
+        ['wiki', 'zh.wikipedia.org/'],
+        ['gist', 'gist.github.com/'],
+        ['facebook', 'facebook.com/Google/'],
+        ['blogger', ''],
+      ]
+  
+      function showIcons() {
+        list.innerHTML = SITE_LIST.map(v => {
+          let [id, url] = v
+          url = url || `www.${id}.com/`
+          return `\
+  <a rel="noopener noreferrer"  class="m-1" target="_blank" href=./-----https://${url}>\
+  <img width=28 height=28 src=__sys__/assets/ico/${id}.png></a>`
+        }).join('') 
+  	  
+      }
+  
+      function addNodeItem(id, text) {
+        const optEl = document.createElement('option')
+        optEl.id = '--' + id
+        optEl.text = text
+        optEl.value = id
+        selNode.appendChild(optEl)
+      }
+  
+      function updateSelected() {
+        const id = conf.node_default
+        const item = document.getElementById('--' + id)
+        if (item) {
+          item.selected = true
+        } else {
+          console.warn('unknown node:', id)
+        }
+      }
+  
+      function showConf() {
+        for (const [id, node] of Object.entries(conf.node_map)) {
+          if (!node.hidden) {
+            addNodeItem(id, node.label)
+          }
+        }
+        updateSelected()
+      }
+    </script>
 </body>
 </html>
